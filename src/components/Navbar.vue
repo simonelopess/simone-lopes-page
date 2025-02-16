@@ -26,13 +26,17 @@ const scrollToSection = (section) => {
 <template>
   <header>
     <nav>
-      <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')">@simonelopess</RouterLink>
-      <RouterLink to="#experience" @click.prevent="scrollToSection('#experience')"
-        >experience</RouterLink
-      >
-      <RouterLink to="#education" @click.prevent="scrollToSection('#education')"
-        >education</RouterLink
-      >
+      <div>
+        <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')"
+          >@simonelopess</RouterLink
+        >
+        <RouterLink to="#experience" @click.prevent="scrollToSection('#experience')"
+          >experience</RouterLink
+        >
+        <RouterLink to="#education" @click.prevent="scrollToSection('#education')"
+          >education</RouterLink
+        >
+      </div>
       <SocialIcons />
     </nav>
   </header>
@@ -43,8 +47,9 @@ header {
   background: var(--bg-nav);
   color: #211f23;
   max-width: fit-content;
-  padding: 24px 52px;
+  padding: 16px 24px;
   border-radius: 100px;
+  backdrop-filter: blur(7px);
 
   position: fixed;
   top: 30px;
@@ -53,6 +58,12 @@ header {
 }
 
 nav {
+  display: flex;
+  gap: 72px;
+  align-items: center;
+}
+
+nav div {
   display: flex;
   gap: 42px;
 }
@@ -65,5 +76,21 @@ nav a {
 .social-networks {
   display: flex;
   gap: 16px;
+}
+
+@media (max-width: 1023px) {
+  header {
+    padding: 16px 16px;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header div {
+    gap: 6px;
+  }
 }
 </style>

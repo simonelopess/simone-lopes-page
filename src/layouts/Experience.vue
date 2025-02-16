@@ -35,4 +35,17 @@ const careerStore = useCareerStore()
   padding: 0px 80px;
   margin-top: 100px;
 }
+
+@media (max-width: 1023px) {
+  .experience-cards {
+    padding: 1rem;
+  }
+
+  .experience-cards .card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px;
+    gap: 8px;
+  }
+}
 </style>

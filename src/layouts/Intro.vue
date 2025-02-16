@@ -97,4 +97,20 @@ import Image from '@/components/Image.vue'
     border-right-color: transparent;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  #intro {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 16px;
+  }
+
+  .intro-anime-typewriter.line-1 {
+    font-size: 48px;
+  }
+
+  .intro-image {
+    justify-content: center;
+  }
+}
 </style>

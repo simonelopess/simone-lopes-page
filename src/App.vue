@@ -29,4 +29,10 @@ body {
   margin: 0 auto;
   margin-top: 180px;
 }
+
+@media (max-width: 1023px) {
+  .container {
+    margin-top: 120px;
+  }
+}
 </style>

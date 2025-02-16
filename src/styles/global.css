@@ -9,7 +9,7 @@
   --color-gray-gradient: linear(90deg, #232323 0%, #434343 49%, #232323 100%);
   --color-white: #fff;
   --color-black: #000;
-  --bg-nav: rgba(33, 31, 35, 35%);
+  --bg-nav: linear-gradient(154deg, #79758333 5.35%, #36356733 83.85%);
 }
 
 .btn {

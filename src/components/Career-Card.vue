@@ -7,7 +7,7 @@
   <div class="career-card__body">
     <p class="career-card__company-name">{{ props.company }}</p>
     <p class="career-card__job-description">{{ props.description }}</p>
-    <div class="carrer-tools">
+    <div class="carrer-tools" v-if="props.tools[0] !== ''">
       <span v-for="tool in tools" :key="tool">
         <img
           :src="icons[tool]"
@@ -83,6 +83,8 @@ const props = defineProps({
     required: false,
   },
 })
+
+console.log('tools', props.tools[0] === '')
 </script>
 
 <style scoped>

@@ -76,4 +76,12 @@ const educationStore = useEducationStore()
 .education__institution--url a:hover {
   filter: brightness(0.8);
 }
+
+@media (max-width: 1023px) {
+  .education-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+}
 </style>
