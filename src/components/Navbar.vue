@@ -16,7 +16,6 @@ const scrollToSection = (section) => {
     element.id !== 'intro' ? (marginTop = 300) : (marginTop = 180)
 
     if (element) {
-      console.log('marginTop', element.offsetTop, marginTop)
       window.scrollTo({
         top: element.offsetTop - marginTop,
         behavior: 'smooth', // Rolagem suave

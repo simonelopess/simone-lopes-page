@@ -1,36 +1,27 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+import CardEducation from '@/components/Card-Education.vue'
 import Card from '@/components/Card.vue'
 import Title from '@/components/Title.vue'
+
+import { useEducationStore } from '@/stores/education'
+
+const educationStore = useEducationStore()
 </script>
 
 <template>
   <div id="education">
     <Title title="Education" preTitle="" />
     <div class="education-cards">
-      <Card>
-        <p class="education__institution">FAETEC - Escola Técnica do Estado do Rio de Janeiro</p>
-        <p class="education__course">Technical High School in Information System</p>
-        <p class="education__period">Jan 2006 - Jun 2009</p>
-        <p class="education__institution--url">
-          <RouterLink to="https://www.faetec.rj.gov.br">www.faetec.rj.gov.br</RouterLink>
-        </p>
-      </Card>
-      <Card>
-        <p class="education__institution">FEUC - Fundação Educacion Unificada Campograndense</p>
-        <p class="education__course">Graduation in Information System</p>
-        <p class="education__period">Jan 2013 - Jun 2017</p>
-        <p class="education__institution--url">
-          <RouterLink to="https://www.feuc.br">www.feuc.br</RouterLink>
-        </p>
-      </Card>
-      <Card>
-        <p class="education__institution">PUC Minas - Pontifícia Universidade Católica Minas</p>
-        <p class="education__course">Post Graduation - Web Development Full Stack</p>
-        <p class="education__period">Aug 2020 - Abr 2022</p>
-        <p class="education__institution--url">
-          <RouterLink to="https://www.pucminas.br/">www.pucminas.br</RouterLink>
-        </p>
+      <Card v-for="education in educationStore.educationPayload" :key="education.id">
+        <CardEducation
+          :key="education.id"
+          :institution="education.institution"
+          :course="education.course"
+          :period="education.period"
+          :site_url="education.site_url"
+          :site_url_display="education.site_url_display"
+        ></CardEducation>
       </Card>
     </div>
   </div>

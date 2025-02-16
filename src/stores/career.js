@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 export const useCareerStore = defineStore('career', {
   state: () => [
     {
+      id: 1,
       role: 'Software Engineer',
       company: 'Google',
       period: 'Jan 2020 - Present',
@@ -11,6 +12,7 @@ export const useCareerStore = defineStore('career', {
       description: 'I worked on the Google search engine',
     },
     {
+      id: 2,
       role: 'Software Engineer',
       company: 'Google',
       period: '2 years',
