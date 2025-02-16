@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <img
-    :src="`/src/assets/profile.png`"
-    :alt="`Simone`"
+    src="`@/assets/profile.png`"
+    alt="`Simone`"
     :style="{ width: `${props.width}px`, height: `${props.height}px` }"
   />
 </template>
