@@ -18,18 +18,12 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
 import { useCareerStore } from '@/stores/career'
 import Card from '@/components/Card.vue'
 import CareerCard from '@/components/Career-Card.vue'
 import Title from '@/components/Title.vue'
 
 const careerStore = useCareerStore()
-
-onMounted(() => {
-  const career = careerStore.careerPayload
-  console.log(career)
-})
 </script>
 
 <style scoped>
@@ -37,7 +31,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 40px 80px;
+  padding: 0px 80px;
   margin-top: 100px;
 }
 </style>

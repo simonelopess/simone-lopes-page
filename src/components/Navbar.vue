@@ -29,7 +29,7 @@ const scrollToSection = (section) => {
 <template>
   <header>
     <nav>
-      <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')">@simonelopes</RouterLink>
+      <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')">@simonelopess</RouterLink>
       <RouterLink to="#experience" @click.prevent="scrollToSection('#experience')"
         >experience</RouterLink
       >
