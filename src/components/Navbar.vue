@@ -73,6 +73,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  filter: brightness(0.8);
+}
+
 .social-networks {
   display: flex;
   gap: 16px;
