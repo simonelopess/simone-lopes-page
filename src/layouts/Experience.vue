@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div id="experience">
-    <Title title="Career background" preTitle="4 years of" />
+    <Title title="Career background" preTitle="" />
     <div class="experience-cards">
       <Card v-for="career in careerStore.careerPayload" :key="career.id">
         <CareerCard
