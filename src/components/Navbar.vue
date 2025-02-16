@@ -1,11 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import { RouterLink } from 'vue-router'
-import emailIcon from '@/assets/icons/email.svg'
-import githubIcon from '@/assets/icons/github.svg'
-import linkedinIcon from '@/assets/icons/linkedin.svg'
 
 import { nextTick } from 'vue'
+import SocialIcons from './Social-Icons.vue'
 
 const scrollToSection = (section) => {
   let marginTop = 0
@@ -35,11 +33,7 @@ const scrollToSection = (section) => {
       <RouterLink to="#education" @click.prevent="scrollToSection('#education')"
         >education</RouterLink
       >
-      <div class="social-networks">
-        <img :src="githubIcon" alt="github icon" />
-        <img :src="linkedinIcon" alt="linkedin icon" />
-        <img :src="emailIcon" alt="email icon" />
-      </div>
+      <SocialIcons />
     </nav>
   </header>
 </template>

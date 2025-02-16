@@ -11,6 +11,7 @@
           :period="career.period"
           :description="career.description"
           :company="career.company"
+          :tools="career.tools"
         />
       </Card>
     </div>

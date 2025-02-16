@@ -7,11 +7,55 @@
   <div class="career-card__body">
     <p class="career-card__company-name">{{ props.company }}</p>
     <p class="career-card__job-description">{{ props.description }}</p>
+    <div class="carrer-tools">
+      <span v-for="tool in tools" :key="tool">
+        <img
+          :src="icons[tool]"
+          :alt="`${tool} icon`"
+          :aria-label="`${tool} icon`"
+          :title="`${tool} icon`"
+        />
+      </span>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { defineProps } from 'vue'
+import pinia from '@/assets/icons/pinia.svg'
+import tailwind from '@/assets/icons/tailwind.svg'
+import react from '@/assets/icons/react.svg'
+import redux from '@/assets/icons/redux.svg'
+import typescript from '@/assets/icons/typescript.svg'
+
+import github from '@/assets/icons/github.svg'
+import javascript from '@/assets/icons/javascript.svg'
+import node from '@/assets/icons/node.svg'
+import storybook from '@/assets/icons/storybook.svg'
+import vite from '@/assets/icons/vite.svg'
+import jira from '@/assets/icons/jira.svg'
+import confluence from '@/assets/icons/confluence.svg'
+import next from '@/assets/icons/next.svg'
+import jest from '@/assets/icons/jest.svg'
+import angular from '@/assets/icons/angular.svg'
+
+const icons = {
+  pinia,
+  tailwind,
+  react,
+  redux,
+  typescript,
+  github,
+  javascript,
+  node,
+  storybook,
+  vite,
+  jira,
+  confluence,
+  next,
+  jest,
+  angular,
+}
 
 const props = defineProps({
   role: {
@@ -34,6 +78,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  tools: {
+    type: Array,
+    required: false,
+  },
 })
 </script>
 
@@ -52,7 +100,7 @@ const props = defineProps({
 }
 
 .career-card__body {
-  flex: 3;
+  flex: 2;
 }
 
 .career-card__role {
@@ -84,5 +132,17 @@ const props = defineProps({
 .career-card__job-description {
   color: var(--color-gray-400);
   font-size: 0.857rem;
+}
+
+.carrer-tools {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 40px;
+}
+
+.carrer-tools img {
+  width: 24px;
+  height: 24px;
 }
 </style>
