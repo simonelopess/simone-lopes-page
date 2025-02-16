@@ -12,7 +12,7 @@ import linkedinIcon from '@/assets/icons/linkedin.svg'
       <RouterLink to="/">@simonelopes</RouterLink>
       <RouterLink to="/education">education</RouterLink>
       <RouterLink to="/experience">experience</RouterLink>
-      <div class="social-icons">
+      <div class="social-networks">
         <img :src="githubIcon" alt="github icon" />
         <img :src="linkedinIcon" alt="linkedin icon" />
         <img :src="emailIcon" alt="email icon" />
@@ -45,7 +45,7 @@ nav a {
   text-decoration: none;
 }
 
-.social-icons {
+.social-networks {
   display: flex;
   gap: 16px;
 }

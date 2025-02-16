@@ -2,7 +2,7 @@
 <template>
   <div class="intro">
     <div class="intro-text">
-      <h1>Hi, I’m Simone</h1>
+      <h1 class="intro-anime-typewriter line-1">Hi, I’m Simone</h1>
       <p>
         During these <strong>6 years</strong> as <strong>Front-End Software Engineer</strong>. My
         role has extended beyond coding to effective communication with various departments, to
@@ -13,14 +13,13 @@
     <div class="intro-image">
       <Image width="407" height="357" />
     </div>
-    <div class="intro-background">
-      <img src="/src/assets/background.png" alt="background" />
-    </div>
   </div>
+  <Title title="Career background" preTitle="4 years of" />
 </template>
 
 <script setup>
 import Image from '@/components/Image.vue'
+import Title from '@/components/Title.vue'
 </script>
 
 <style scoped>
@@ -51,12 +50,47 @@ import Image from '@/components/Image.vue'
   padding: 12px 40px;
   color: var(--color-gray-900);
   border-radius: 100px;
+  cursor: pointer;
 }
 
-.intro-background {
-  position: absolute;
-  top: 0px;
-  left: 20;
-  z-index: -1;
+.intro-button:hover {
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+
+.intro-anime-typewriter {
+  animation:
+    typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.line-1 {
+  position: relative;
+  top: 0;
+  width: 24em;
+  /* margin: 0 auto; */
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(0%);
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6.5em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 </style>
