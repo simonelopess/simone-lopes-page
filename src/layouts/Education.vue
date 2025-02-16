@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
-import CardEducation from '@/components/Card-Education.vue'
+import CardEducation from '@/components/Education-Card.vue'
 import Card from '@/components/Card.vue'
 import Title from '@/components/Title.vue'
 
