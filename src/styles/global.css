@@ -1,0 +1,13 @@
+:root {
+  --color-gray-900: #0c0c0d;
+  --color-gray-800: #131313;
+  --color-gray-700: #272727;
+  --color-gray-400: #6f6f6f;
+  --color-gray-300: #c8c8c8;
+  --color-purple-300: #b292ff;
+  --color-green-500: #5fb9b0;
+  --color-gray-gradient: linear(90deg, #232323 0%, #434343 49%, #232323 100%);
+  --color-white: #fff;
+  --color-black: #000;
+  --bg-nav: rgba(33, 31, 35, 35%);
+}
