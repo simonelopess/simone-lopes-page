@@ -4,14 +4,38 @@ import { RouterLink } from 'vue-router'
 import emailIcon from '@/assets/icons/email.svg'
 import githubIcon from '@/assets/icons/github.svg'
 import linkedinIcon from '@/assets/icons/linkedin.svg'
+
+import { nextTick } from 'vue'
+
+const scrollToSection = (section) => {
+  let marginTop = 0
+
+  nextTick(() => {
+    const element = document.querySelector(section)
+
+    element.id !== 'intro' ? (marginTop = 300) : (marginTop = 180)
+
+    if (element) {
+      console.log('marginTop', element.offsetTop, marginTop)
+      window.scrollTo({
+        top: element.offsetTop - marginTop,
+        behavior: 'smooth', // Rolagem suave
+      })
+    }
+  })
+}
 </script>
 
 <template>
   <header>
     <nav>
-      <RouterLink to="/">@simonelopes</RouterLink>
-      <RouterLink to="/education">education</RouterLink>
-      <RouterLink to="/experience">experience</RouterLink>
+      <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')">@simonelopes</RouterLink>
+      <RouterLink to="#experience" @click.prevent="scrollToSection('#experience')"
+        >experience</RouterLink
+      >
+      <RouterLink to="#education" @click.prevent="scrollToSection('#education')"
+        >education</RouterLink
+      >
       <div class="social-networks">
         <img :src="githubIcon" alt="github icon" />
         <img :src="linkedinIcon" alt="linkedin icon" />

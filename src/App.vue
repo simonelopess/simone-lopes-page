@@ -20,8 +20,9 @@ body {
   background: var(--color-gray-900);
   color: var(--color-white);
   overflow-x: hidden;
+  background-image: url('/src/assets/background.png');
+  background-repeat: repeat-y;
 }
-
 .container {
   max-width: 1280px;
   padding: 20px;

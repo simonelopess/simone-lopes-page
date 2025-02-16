@@ -1,5 +1,11 @@
 <script setup>
-import Intro from '@/components/Intro.vue'
+import Education from '@/layouts/Education.vue'
+import Experience from '@/layouts/Experience.vue'
+import Intro from '@/layouts/Intro.vue'
 </script>
 
-<template><Intro /></template>
+<template>
+  <Intro />
+  <Experience />
+  <Education />
+</template>

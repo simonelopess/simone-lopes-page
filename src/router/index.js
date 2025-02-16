@@ -9,18 +9,6 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
-    {
-      path: '/education',
-      name: 'education',
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/EducationView.vue'),
-    },
-    {
-      path: '/experience',
-      name: 'experience',
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ExperienceView.vue'),
-    },
   ],
 })
 

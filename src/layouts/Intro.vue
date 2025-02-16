@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="intro">
+  <div id="intro">
     <div class="intro-text">
       <h1 class="intro-anime-typewriter line-1">Hi, I’m Simone</h1>
       <p>
@@ -8,28 +8,29 @@
         role has extended beyond coding to effective communication with various departments, to
         define new features and spearheading the development of new apps.
       </p>
-      <button class="intro-button">Download CV</button>
+      <button class="intro-button btn">Download CV</button>
     </div>
     <div class="intro-image">
       <Image width="407" height="357" />
     </div>
   </div>
-  <Title title="Career background" preTitle="4 years of" />
 </template>
 
 <script setup>
 import Image from '@/components/Image.vue'
-import Title from '@/components/Title.vue'
 </script>
 
 <style scoped>
-.intro {
+#intro {
   display: flex;
-  justify-content: space-around;
+  padding: 0;
+  justify-content: center;
+  padding: 0 80px;
 }
 
 .intro-text {
   max-width: 662px;
+  flex: 1;
 }
 
 .intro-text h1 {
@@ -45,12 +46,15 @@ import Title from '@/components/Title.vue'
   color: var(--color-gray-300);
 }
 
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
 .intro-button {
-  margin-top: 24px;
-  padding: 12px 40px;
   color: var(--color-gray-900);
-  border-radius: 100px;
-  cursor: pointer;
+  margin-top: 24px;
 }
 
 .intro-button:hover {
