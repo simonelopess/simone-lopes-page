@@ -141,6 +141,7 @@ console.log('tools', props.tools[0] === '')
   flex-direction: row;
   gap: 1rem;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .carrer-tools img {

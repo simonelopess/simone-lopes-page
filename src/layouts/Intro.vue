@@ -8,7 +8,7 @@
         role has extended beyond coding to effective communication with various departments, to
         define new features and spearheading the development of new apps.
       </p>
-      <button class="intro-button btn">Download CV</button>
+      <a class="intro-button btn" :href="fileUrl" download target="_blank">Download CV</a>
     </div>
     <div class="intro-image">
       <Image width="407" height="357" />
@@ -18,6 +18,9 @@
 
 <script setup>
 import Image from '@/components/Image.vue'
+
+const fileUrl =
+  'https://docs.google.com/document/d/1t_cr6IqVxCiIv4mDLZ_1KPeBS5UimYmD/edit?usp=sharing&ouid=107104635036903206236&rtpof=true&sd=true'
 </script>
 
 <style scoped>
@@ -55,6 +58,7 @@ import Image from '@/components/Image.vue'
 .intro-button {
   color: var(--color-gray-900);
   margin-top: 24px;
+  background: var(--color-white);
 }
 
 .intro-button:hover {
@@ -111,6 +115,11 @@ import Image from '@/components/Image.vue'
 
   .intro-image {
     justify-content: center;
+  }
+
+  .intro-image img {
+    width: 220px !important;
+    height: 194px !important;
   }
 }
 </style>

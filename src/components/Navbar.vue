@@ -84,17 +84,21 @@ nav a:hover {
 
 @media (max-width: 1023px) {
   header {
-    padding: 16px 16px;
+    padding: 20px 27px;
+    padding-bottom: 10px;
   }
 
   header nav {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   header div {
-    gap: 6px;
+    gap: 20px;
   }
 }
 </style>
