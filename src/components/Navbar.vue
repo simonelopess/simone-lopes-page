@@ -28,13 +28,13 @@ const scrollToSection = (section) => {
     <nav>
       <div>
         <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')"
-          >@simonelopess</RouterLink
+          >{{ $t('menu.home') }}</RouterLink
         >
         <RouterLink to="#experience" @click.prevent="scrollToSection('#experience')"
-          >experience</RouterLink
+          >{{ $t('menu.experience') }}</RouterLink
         >
         <RouterLink to="#education" @click.prevent="scrollToSection('#education')"
-          >education</RouterLink
+          >{{ $t('menu.education') }}</RouterLink
         >
         <div class="translate">
           <v-button class="btn" @click="$i18n.locale = `pt`">PT</v-button>

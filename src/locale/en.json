@@ -42,5 +42,10 @@
         "scrum"
       ]
     }
+  },
+  "menu": {
+    "home": "@simonelopes",
+    "experience": "experience",
+    "education": "education"
   }
 }
