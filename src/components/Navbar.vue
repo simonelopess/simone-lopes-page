@@ -37,11 +37,13 @@ const scrollToSection = (section) => {
           $t('menu.education')
         }}</RouterLink>
       </div>
-      <div class="translate">
-        <v-button class="btn" @click="$i18n.locale = `pt`">PT</v-button>
-        <v-button class="btn" @click="$i18n.locale = `en`">EN</v-button>
+      <div class="social-translate">
+        <div class="translate">
+          <v-button class="btn" @click="$i18n.locale = `pt`">PT</v-button>
+          <v-button class="btn" @click="$i18n.locale = `en`">EN</v-button>
+        </div>
+        <SocialIcons />
       </div>
-      <SocialIcons />
     </nav>
   </header>
 </template>
@@ -116,12 +118,15 @@ nav a:hover {
   }
 
   header div {
-    gap: 20px;
+    gap: 12px;
   }
 
-  .social-networks {
-    display: flex;
-    gap: 12px;
+  .social-translate {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    gap: 8px;
   }
 }
 </style>
