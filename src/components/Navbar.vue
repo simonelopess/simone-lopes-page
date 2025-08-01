@@ -118,5 +118,10 @@ nav a:hover {
   header div {
     gap: 20px;
   }
+
+  .social-networks {
+    display: flex;
+    gap: 12px;
+  }
 }
 </style>
