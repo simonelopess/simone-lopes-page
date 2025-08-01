@@ -2,11 +2,9 @@
 <template>
   <div id="intro">
     <div class="intro-text">
-      <h1 class="intro-anime-typewriter line-1">Hi, I’m Simone</h1>
+      <h1 class="intro-anime-typewriter line-1">{{ $t('intro') }}</h1>
       <p>
-        During these <strong>6 years</strong> as <strong>Front-End Software Engineer</strong>. My
-        role has extended beyond coding to effective communication with various departments, to
-        define new features and spearheading the development of new apps.
+        {{ $t('description') }}
       </p>
       <a class="intro-button btn" :href="fileUrl" download target="_blank">Download CV</a>
     </div>

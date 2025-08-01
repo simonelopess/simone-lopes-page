@@ -36,6 +36,10 @@ const scrollToSection = (section) => {
         <RouterLink to="#education" @click.prevent="scrollToSection('#education')"
           >education</RouterLink
         >
+        <div class="translate">
+          <v-button class="btn" @click="$i18n.locale = `pt`">PT</v-button>
+          <v-button class="btn" @click="$i18n.locale = `en`">EN</v-button>
+        </div>
       </div>
       <SocialIcons />
     </nav>
@@ -82,6 +86,20 @@ nav a:hover {
   gap: 16px;
 }
 
+.translate {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  background: var(--color-purple-300);
+  color: var(--color-white);
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.5rem;
+  font-weight: 700;
+}
 @media (max-width: 1023px) {
   header {
     padding: 20px 27px;

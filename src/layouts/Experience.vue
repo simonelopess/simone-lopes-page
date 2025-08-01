@@ -1,17 +1,17 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div id="experience">
-    <Title title="Career background" preTitle="" />
+    <Title :title="$t('careerTitle')" preTitle="" />
     <div class="experience-cards">
       <Card v-for="career in careerStore.careerPayload" :key="career.id">
         <CareerCard
           :key="career.id"
-          :role="career.role"
-          :contract="career.contract"
-          :period="career.period"
-          :description="career.description"
-          :company="career.company"
-          :tools="career.tools"
+          :role="$t(career.role)"
+          :contract="$t(career.contract)"
+          :period="$t(career.period)"
+          :description="$t(career.description)"
+          :company="$t(career.company)"
+          :tools="career.tools.map((t) => $t(t))"
         />
       </Card>
     </div>

@@ -1,0 +1,46 @@
+{
+  "welcome": "Bem-vindo ao meu portfólio",
+  "intro": "Simone L. 👋",
+  "careerTitle": "Carreira",
+  "education": "Educação",
+  "description": "Durante estes 6 anos como Engenheira de Software Front-End, meu papel se estendeu além da codificação para uma comunicação eficaz com vários departamentos, definição de novas funcionalidades e liderança no desenvolvimento de novos aplicativos.",
+  "fileUrl": "https://simone-lopes.github.io/cv.pdf",
+  "career": {
+    "1": {
+      "role": "Desenvolvedora Frontend",
+      "company": "Noesis - NOS SPGS",
+      "period": "Jul 2023 - Presente",
+      "local": "Lisboa, Portugal",
+      "contract": "Tempo integral",
+      "description": "Atualmente trabalhando como Desenvolvedora Frontend, migrando entre tecnologias diariamente e contribuindo para vários projetos internos. Colaboro com uma equipe de UX/UI para o cliente NOS, focando na entrega de soluções de alta qualidade. No momento, estou trabalhando no núcleo de uma aplicação interna para produtos NOS usando AngularJS. Além disso, contribuo para o desenvolvimento de aplicações móveis e web para cinemas NOS, garantindo experiências de usuário perfeitas.",
+      "tools": ["react", "typescript", "confluence", "jira", "storybook", "vite", "next", "angular"]
+    },
+    "2": {
+      "role": "Desenvolvedora Frontend",
+      "company": "CI&T",
+      "period": "Jun 2021 - Out 2022",
+      "local": "Campinas, Brasil",
+      "contract": "Tempo integral",
+      "description": "Desenvolvedora Frontend com ampla experiência na modernização e otimização de aplicações web. Contribuí para a transformação de um sistema legado em uma aplicação moderna e responsiva usando React e TypeScript. Desenvolvi uma nova aplicação web para o cliente, melhorando a experiência do usuário e o desempenho. Colaborei com equipes multifuncionais para entregar soluções de software de alta qualidade, garantindo a adesão às melhores práticas de codificação e design.",
+      "tools": ["react", "redux", "typescript", "github", "javascript", "node", "storybook", "jest"]
+    },
+    "3": {
+      "role": "Desenvolvedora Frontend",
+      "company": "FIRJAN - Federação de Indústrias do Estado do Rio e Janeiro",
+      "period": "Jan 2019 - Jun 2020",
+      "local": "Rio de Janeiro, Brasil",
+      "contract": "Tempo integral",
+      "description": "Como Desenvolvedora Frontend, contribuí para projetos utilizando tecnologias como React, React Native e Angular para empresas parceiras líderes do setor. Meu papel focou na criação de soluções inovadoras para impulsionar o crescimento industrial, incluindo o desenvolvimento de uma plataforma para gerenciar equipamentos inteligentes. Durante a pandemia, participei de um projeto que possibilitou o monitoramento em tempo real da oxigenação sanguínea dos funcionários usando smartwatches, acessível por meio de um painel alimentado por APIs. Especializo-me na construção de soluções móveis e web, integrando com backends Node.js e colaborando em ambientes ágeis usando metodologias Scrum.",
+      "tools": [
+        "react",
+        "react-native",
+        "angular",
+        "node",
+        "typescript",
+        "javascript",
+        "git",
+        "scrum"
+      ]
+    }
+  }
+}

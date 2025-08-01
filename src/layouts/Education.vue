@@ -11,7 +11,7 @@ const educationStore = useEducationStore()
 
 <template>
   <div id="education">
-    <Title title="Education" preTitle="" />
+    <Title :title="$t('education')" preTitle="" />
     <div class="education-cards">
       <Card v-for="education in educationStore.educationPayload" :key="education.id">
         <CardEducation

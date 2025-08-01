@@ -1,0 +1,46 @@
+{
+  "welcome": "Welcome to my portfolio",
+  "intro": "Hi, I’m Simone",
+  "careerTitle": "Career",
+  "education": "Education",
+  "description": "During these 6 years as a Front-End Software Engineer, my role has extended beyond coding to effective communication with various departments, defining new features, and spearheading the development of new apps.",
+  "fileUrl": "https://simone-lopes.github.io/cv.pdf",
+  "career": {
+    "1": {
+      "role": "Frontend Developer",
+      "company": "Noesis - @NOS SPGS",
+      "period": "Jul 2023 - Present",
+      "local": "Lisbon, Portugal",
+      "contract": "Full-time",
+      "description": "Currently working as a Frontend Developer, migrating between technologies daily and contributing to various internal projects. I collaborate with a UX/UI team for the NOS client, focusing on delivering high-quality solutions. At present, I am working on an internal application core for NOS products using AngularJS. Additionally, I contribute to the development of mobile and web applications for NOS cinemas, ensuring seamless user experiences.",
+      "tools": ["react", "typescript", "confluence", "jira", "storybook", "vite", "next", "angular"]
+    },
+    "2": {
+      "role": "Frontend Developer",
+      "company": "CI&T",
+      "period": "Jun 2021 - Oct 2022",
+      "local": "Campinas, Brazil",
+      "contract": "Full-time",
+      "description": "Frontend Developer with extensive experience in modernizing and optimizing web applications. Contributed to the transformation of a legacy system into a modern, responsive application using React and TypeScript. Developed a new web application for the client, enhancing user experience and performance. Collaborated with cross-functional teams to deliver high-quality software solutions, ensuring adherence to best practices in coding and design.",
+      "tools": ["react", "redux", "typescript", "github", "javascript", "node", "storybook", "jest"]
+    },
+    "3": {
+      "role": "Frontend Developer",
+      "company": "FIRJAN - Federação de Indústrias do Estado do Rio e Janeiro",
+      "period": "Jan 2019 - Jun 2020",
+      "local": "Rio de Janeiro, Brazil",
+      "contract": "Full-time",
+      "description": "As a Frontend Developer, I have contributed to projects leveraging technologies such as React, React Native, and Angular for industry-leading partner companies. My role focused on creating innovative solutions to drive industrial growth, including developing a platform to manage smart equipment. During the pandemic, I participated in a project that enabled real-time blood oxygen monitoring of employees using smartwatches, accessible through a dashboard powered by APIs. I specialize in building mobile and web solutions, integrating with Node.js backends, and collaborating in agile environments using Scrum methodologies.",
+      "tools": [
+        "react",
+        "react-native",
+        "angular",
+        "node",
+        "typescript",
+        "javascript",
+        "git",
+        "scrum"
+      ]
+    }
+  }
+}

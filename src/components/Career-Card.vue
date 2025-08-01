@@ -83,8 +83,6 @@ const props = defineProps({
     required: false,
   },
 })
-
-console.log('tools', props.tools[0] === '')
 </script>
 
 <style scoped>
