@@ -27,19 +27,19 @@ const scrollToSection = (section) => {
   <header>
     <nav>
       <div>
-        <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')"
-          >{{ $t('menu.home') }}</RouterLink
-        >
-        <RouterLink to="#experience" @click.prevent="scrollToSection('#experience')"
-          >{{ $t('menu.experience') }}</RouterLink
-        >
-        <RouterLink to="#education" @click.prevent="scrollToSection('#education')"
-          >{{ $t('menu.education') }}</RouterLink
-        >
-        <div class="translate">
-          <v-button class="btn" @click="$i18n.locale = `pt`">PT</v-button>
-          <v-button class="btn" @click="$i18n.locale = `en`">EN</v-button>
-        </div>
+        <RouterLink to="#intro" @click.prevent="scrollToSection('#intro')">{{
+          $t('menu.home')
+        }}</RouterLink>
+        <RouterLink to="#experience" @click.prevent="scrollToSection('#experience')">{{
+          $t('menu.experience')
+        }}</RouterLink>
+        <RouterLink to="#education" @click.prevent="scrollToSection('#education')">{{
+          $t('menu.education')
+        }}</RouterLink>
+      </div>
+      <div class="translate">
+        <v-button class="btn" @click="$i18n.locale = `pt`">PT</v-button>
+        <v-button class="btn" @click="$i18n.locale = `en`">EN</v-button>
       </div>
       <SocialIcons />
     </nav>

@@ -2,7 +2,7 @@
   "welcome": "Welcome to my portfolio",
   "intro": "Hi, I’m Simone",
   "careerTitle": "Career",
-  "education": "Education",
+  "educationTitle": "Education",
   "description": "During these 6 years as a Front-End Software Engineer, my role has extended beyond coding to effective communication with various departments, defining new features, and spearheading the development of new apps.",
   "fileUrl": "https://simone-lopes.github.io/cv.pdf",
   "career": {
@@ -44,8 +44,38 @@
     }
   },
   "menu": {
-    "home": "@simonelopes",
+    "home": "simonelopes",
     "experience": "experience",
     "education": "education"
+  },
+  "education": {
+    "1": {
+      "institution": "FAETEC - Escola Técnica do Estado do Rio de Janeiro",
+      "course": "Technical High School in Information System",
+      "period": "Jan 2006 - Jun 2009",
+      "site_url": "https://www.faetec.rj.gov.br",
+      "site_url_display": "www.faetec.rj.gov.br"
+    },
+    "2": {
+      "institution": "FEUC - Fundação Educacion Unificada Campograndense",
+      "course": "Graduation in Information System",
+      "period": "Jan 2013 - Jun 2017",
+      "site_url": "https://www.feuc.br",
+      "site_url_display": "www.feuc.br"
+    },
+    "3": {
+      "institution": "PUC-Rio - Pontifícia Universidade Católica do Rio de Janeiro",
+      "course": "Postgraduate in Full Stack Development",
+      "period": "Jan 2018 - Dec 2019",
+      "site_url": "https://www.puc-rio.br",
+      "site_url_display": "www.puc-rio.br"
+    },
+    "4": {
+      "institution": "FIAP",
+      "course": "Frontend Engineering",
+      "period": "Jun 2025 - Mar 2026",
+      "site_url": "https://www.fiap.com.br",
+      "site_url_display": "www.fiap.com.br"
+    }
   }
 }

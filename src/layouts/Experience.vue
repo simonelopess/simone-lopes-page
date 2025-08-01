@@ -4,6 +4,7 @@
     <Title :title="$t('careerTitle')" preTitle="" />
     <div class="experience-cards">
       <Card v-for="career in careerStore.careerPayload" :key="career.id">
+        {{  console.log(career) }}
         <CareerCard
           :key="career.id"
           :role="$t(career.role)"

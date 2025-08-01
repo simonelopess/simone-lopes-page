@@ -14,13 +14,14 @@ const educationStore = useEducationStore()
     <Title :title="$t('education')" preTitle="" />
     <div class="education-cards">
       <Card v-for="education in educationStore.educationPayload" :key="education.id">
+      {{ console.log(education) }}
         <CardEducation
           :key="education.id"
-          :institution="education.institution"
-          :course="education.course"
-          :period="education.period"
-          :site_url="education.site_url"
-          :site_url_display="education.site_url_display"
+          :institution="$t(education.institution)"
+          :course="$t(education.course)"
+          :period="$t(education.period)"
+          :site_url="$t(education.site_url)"
+          :site_url_display="$t(education.site_url_display)"
         ></CardEducation>
       </Card>
     </div>
